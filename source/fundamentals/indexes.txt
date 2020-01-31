@@ -132,14 +132,21 @@ For a full explanation of text search with MongoDB, refer to :manual:`Text Index
 Geospatial Indexes
 ~~~~~~~~~~~~~~~~~~
 
-MongoDB supports queries of geospatial coordinate data using :manual:`2dsphere </core/2dsphere>` indexes. With a ``2dsphere`` index, you can query for inclusion, intersection, and proximity. The :manual:`Geospatial Queries page </geospatial-queries>` in the MongoDB manual provides a detailed explanation of geospatial query operations in MongoDB.
+MongoDB supports queries of geospatial coordinate data using
+:manual:`2dsphere </core/2dsphere>` indexes. With a ``2dsphere`` index,
+you can query for inclusion, intersection, and proximity. The
+:manual:`Geospatial Queries page </geospatial-queries>` in the MongoDB
+manual provides a detailed explanation of geospatial query operations in
+MongoDB.
 
-.. seealso::
-   
-   The :doc:`/fundamentals/crud/read-operations/geo` guide for an
-   overview of working with geospatial data with MongoDB and |node|.
+The :doc:`/fundamentals/crud/read-operations/geo` guide provides an
+overview of working with geospatial data with MongoDB and |node|.
 
-To create a ``2dsphere`` index, the field you are indexing must be a :manual:`GeoJSON object </reference/geojson>`. The ``location.geo`` field in following sample document from the ``theaters`` collection in the ``sample_mflix`` database is a GeoJSON point object that describes the coordinates of the specified theater:
+To create a ``2dsphere`` index, the field you are indexing must be a
+:manual:`GeoJSON object </reference/geojson>`. The ``location.geo`` field
+in following sample document from the ``theaters`` collection in the
+``sample_mflix`` database is a GeoJSON point object that describes the
+coordinates of the specified theater:
 
 .. code-block:: javascript
 
@@ -172,12 +179,11 @@ collection in the ``sample_mflix`` database.
    :start-after: begin-ex
    :end-before: end-ex
 
-
 MongoDB also supports :manual:`2d </core/index-2d>` indexes for
 calculating distances on a Euclidean plane and for working with the
 "legacy coordinate pairs" syntax used in MongoDB 2.2 and earlier. If you
-need to calculate distances on a 2d plane, use a 2d index, rather than a
-2dsphere.
+need to calculate distances on a 2d plane, use a ``2d`` index, rather
+than a ``2dsphere``.
 
 Unique Indexes
 ~~~~~~~~~~~~~~
