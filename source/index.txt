@@ -7,16 +7,16 @@ MongoDB Node Driver
 .. include:: /includes/unicode-checkmark.rst
 
 .. toctree::
-  :titlesonly:
-  :maxdepth: 1
-
-  /quick-start
-  /fundamentals
-  /usage-examples
-  /api-documentation
-  /faq
-  /issues-and-help
-  /compatibility
+   :titlesonly:
+   :maxdepth: 1
+ 
+   /quick-start
+   /fundamentals
+   /usage-examples
+   /api-documentation
+   /faq
+   /issues-and-help
+   /compatibility
 
 
 Introduction
